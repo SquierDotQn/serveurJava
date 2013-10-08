@@ -17,7 +17,6 @@ public class ServeurChargen {
 		try {
 			servSocket = new ServerSocket(port);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		System.out.println("["+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()+"] : Ouverture du serveur Chargen au port "+port+".");
@@ -31,7 +30,6 @@ public class ServeurChargen {
 			out = socket.getOutputStream();
 			System.out.println("["+d.getHours()+":"+d.getMinutes()+":"+d.getSeconds()+"] : Connexion établie pour le Chargen");
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		writer = new PrintWriter(out, true);
