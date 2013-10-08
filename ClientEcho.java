@@ -10,10 +10,8 @@ public class ClientEcho {
 		try {
 			connexion = new Socket(ip, port);
 		} catch (UnknownHostException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
@@ -49,7 +47,6 @@ public class ClientEcho {
 		try {
 			out.println(lectureClavier.readLine());
 		} catch (IOException e1) {
-			// TODO Auto-generated catch block
 			e1.printStackTrace();
 		}
 		//System.out.println("out envoyé");
